@@ -1,4 +1,11 @@
 /**
+ * This module supports query string formatting and lightweight customizable Fetch Client API wrappers.
+ * 
+ * @module http
+ */
+
+
+/**
  * Custom HTTP Error class representing non-2xx responses.
  */
 export class HttpError extends Error {

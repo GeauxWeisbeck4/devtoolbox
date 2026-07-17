@@ -1,4 +1,11 @@
 /**
+ * This module supports case conversion and string sanitization.
+ * 
+ * @module string
+ */
+
+
+/**
  * Converts a string into a URL-friendly slug.
  * Removes special characters, converts spaces to hyphens, and downcases.
  *

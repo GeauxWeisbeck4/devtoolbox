@@ -1,4 +1,11 @@
 /**
+ * This module supports deep cloning, deep merging, and subset selection helper functions.
+ * 
+ * @module object
+ */
+
+
+/**
  * Checks if a value is a plain object.
  *
  * @param val - The value to check.

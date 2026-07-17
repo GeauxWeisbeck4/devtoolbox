@@ -1,4 +1,10 @@
 /**
+ * This module supports client-side and SSR-friendly DOM helper utilities.
+ * 
+ * @module dom
+ */
+
+/**
  * Safely checks if the current runtime environment is a browser.
  *
  * @returns True if running in a browser, false otherwise.
