@@ -1,4 +1,11 @@
 /**
+ * This module contains async utilities for handling async operations.
+ * 
+ * @module async
+ */
+
+
+/**
  * Resolves a promise after a given number of milliseconds.
  * Supports cancelling via AbortSignal.
  *
@@ -14,7 +21,7 @@ export function delay(
     if (options?.signal?.aborted) {
       return reject(
         options.signal.reason ||
-          new DOMException("Delay aborted", "AbortError"),
+        new DOMException("Delay aborted", "AbortError"),
       );
     }
 
@@ -29,7 +36,7 @@ export function delay(
       clearTimeout(timer);
       reject(
         options?.signal?.reason ||
-          new DOMException("Delay aborted", "AbortError"),
+        new DOMException("Delay aborted", "AbortError"),
       );
     }
 
