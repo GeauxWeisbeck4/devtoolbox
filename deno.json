@@ -1,0 +1,46 @@
+{
+  "name": "@geauxweisbeck4/devtoolbox",
+  "version": "0.1.0",
+  "license": "MIT",
+  "exports": {
+    ".": "./mod.ts",
+    "./async": "./src/async.ts",
+    "./string": "./src/string.ts",
+    "./object": "./src/object.ts",
+    "./dom": "./src/dom.ts",
+    "./http": "./src/http.ts"
+  },
+  "publish": {
+    "include": [
+      "LICENSE",
+      "README.md",
+      "mod.ts",
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "src/**/*_test.ts"
+    ]
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@^1.0.0"
+  },
+  "compilerOptions": {
+    "lib": [
+      "deno.ns",
+      "dom",
+      "dom.iterable"
+    ]
+  },
+  "tasks": {
+    "test": "deno test --allow-env --allow-net src/",
+    "fmt": "deno fmt",
+    "lint": "deno lint"
+  },
+  "lint": {
+    "rules": {
+      "exclude": [
+        "no-explicit-any"
+      ]
+    }
+  }
+}
